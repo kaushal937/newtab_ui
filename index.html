@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="ico" rel="icon" href="ui/icons/favicon.png">
+    <title id="title">New Tab</title>
+</head>
+<body>
+    <video autoplay muted loop plays-inline class="back"> 
+        <source id="bg" src="img/bgs/itachi_kisame_live_wallpaper.mp4">
+    </video>
+    <div class="head">
+        <div class="cont">
+            <div class="obj1 obj1x">
+                <a href="https://www.netflix.com" target="_blank" id="linka"><img src="img/netflixlogo.jpg" alt="netflix" class="logo_bar" width="100%" height="100%"></a>
+            </div>
+            <div class="obj1">
+                <a href="https://mail.google.com" target="_blank" id="linkb"><img src="img/gmaillogo.jpeg" alt="gmail" class="logo_bar" width="100%" height="100%"></a>
+            </div>
+            <div class="obj1">
+                <a href="https://www.primevideo.com" target="_blank" id="linkc"><img src="img/primevidlogo.jpg" alt="prime video" class="logo_bar" width="100%" height="100%"></a>
+            </div>
+            <div class="obj1">
+                <a href="https://aniwatch.to/home" target="_blank" id="linkd"><img src="img/aniwatchlogo.png" alt="zoro.to" class="logo_bar" width="100%" height="100%"></a>
+            </div>
+            <div class="obj1">
+                <a  id="syt" href="https://www.youtube.com" target="_blank" id="linke"><img src="img/ytlogo.jpeg" alt="youtube" class="logo_bar" width="100%" height="100%"></a>
+            </div>
+            <div class="obj1">
+                <a href="https://www.reddit.com" target="_blank" id="linkf"><img src="img/redditlogo.png" alt="youtube" class="logo_bar" width="100%" height="100%"></a>
+            </div>
+            <div class="obj1">
+                <a href="https://www.instagram.com" target="_blank" id="linkg"><img src="img/instalogo.png" alt="youtube" class="logo_bar" width="100%" height="100%"></a>
+            </div>
+            <div class="obj1 obj1y">
+                <a href="https://web.whatsapp.com" target="_blank" id="linkh"><img src="img/walogo.png" alt="youtube" class="logo_bar" width="100%" height="100%"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="pt2">
+            <div class="searchbox">
+                <div class="container2">
+                        <input type="text" placeholder="     Google..." class="searcher" id="searchvalue" autofocus>
+                        <button onclick="ggsearch()" class="searchbut"><img src="img/search.png" width="34px"></button>
+               </div>
+               <br>
+               <div class="infotxt">
+                    <span id="timer"></span>
+                    <span class="coma">,</span>
+                    <span id="date"></span><br>
+                    <span id="day"></span>
+               </div>
+           </div>   
+        </div>
+    </div>
+    <button class="blanc" id="blanc" onclick="hider()"></button>
+    <div class="Smain" id="nonn">
+        <div class="cons">
+            <input type="text" class="i" id="bse" placeholder="      Search..." onkeyup="search()">
+            <ol class="bookmarks" id="bm" style="list-style: none;">
+                <li class="alb"><a href="https://www.reddit.com" class="lll" target="_blank">Reddit</a></li>
+                <li class="alb"><a href="https://github.com/" class="lll" target="_blank">Git Hub</a></li>
+                <li class="alb"><a href="https://www.pw.live/study/batches/study" class="lll" target="_blank">PW Neev</a></li>
+                <li class="alb"><a href="https://drv.tw" class="lll" target="_blank">DRV  TW</a></li>
+                <li class="alb"><a href="https://drive.google.com/drive/my-drive" class="lll" target="_blank">Drive</a></li>
+                <li class="alb"><a href="https://www.flipkart.com/" class="lll" target="_blank">Flipkart</a></li>
+                <li class="alb"><a href="http://localhost/phpmyadmin/" class="lll" target="_blank">PhpMyAdmin</a></li>
+                <li class="alb"><a href="https://jartexnetwork.com/" class="lll" target="_blank">Jartex</a></li>
+                <li class="alb"><a href="https://render.com/" class="lll" target="_blank">Render</a></li>
+                <li class="alb"><a href="https://cpstest.org/" class="lll" target="_blank">CPS Test</a></li>
+                <li class="alb"><a href="https://play.typeracer.com/" class="lll" target="_blank">Typeracer</a></li>
+                <li class="alb"><a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" class="lll" target="_blank">Bootstrap</a></li>
+                <li class="alb"><a href="https://fontawesome.com/" class="lll" target="_blank">Fontawesome</a></li>
+                <li class="alb"><a href="https://amazon.in/" class="lll" target="_blank">Amazon</a></li>
+                <li class="alb"><a href="https://developer.chrome.com/" class="lll" target="_blank">Chrome Dev</a></li>
+                <li class="alb"><a href="https://expressjs.com/en/4x/api.html" class="lll" target="_blank">Express JS</a></li>
+                <li class="alb"><a href="https://translate.google.co.in/?sl=en&tl=hi&op=translate" class="lll" target="_blank">Google Translate</a></li>
+                <li class="alb"><a href="https://react.dev/" class="lll" target="_blank">Chrome Dev</a></li>
+            </ol>
+        </div>
+    </div>
+    <div class="Smain2">
+            <button onclick="change1()" id="b"><img id="ui" src="img/rarrow.png" width="25px"></button>
+            <div class="caps">
+                
+                <!-- <div class="o" id="f">set</div> -->
+            </div>
+    </div>
+    <button id="seCloser" onclick="setter()"></button>
+    <div class="settings" id="settings">
+        <div class="contsss" id="conterr">
+            <div class="fixer">
+                <input type="text" id="ssearch" placeholder="   Search Music..." onkeyup="searchSet()">
+            </div>
+            <div class="scon" id="scon">
+                <button class="musics" onclick="setmusic(bloodPop)">
+                    <span class="musicname">
+                        BrooklynBloodPop
+                    </span>
+                </button>
+                <button class="musics" onclick="setmusic(allGirlsAreTheSame)">
+                    <span class="musicname">
+                        All Girls Are The Same
+                    </span>
+                </button>
+                <button class="musics" onclick="setmusic(romanticHomicide)">
+                    <span class="musicname">
+                        Romantic Homicide
+                    </span>
+                </button>
+                <button class="musics" onclick="setmusic(nightWorkSlowed)">
+                    <span class="musicname">
+                        Night Work - Slowed
+                    </span>
+                </button>
+                <button class="musics" onclick="setmusic(apocalypseInst)">
+                    <span class="musicname">
+                        Apocalypse Instrumental
+                    </span>
+                </button>
+                <!-- <section id="aaa" class="over"><a class="hide">musicvolumesound</a>
+                    <div class="c3 musics">
+                        <span class="titlese">Background Music</span>
+                        <div class="mcontset">
+                            <span class="tinsetse">Default Volume</span>
+                        </div>
+                    </div>
+                </section>
+                <section id="bbb" class="over"><a class="hide">background</a>
+                    <div class="c3 bg"></div>
+                </section> -->
+            </div>
+        </div>
+    </div>
+    <div class="st" id="set">
+        <button class="ct" id="sbb">
+            <img id="f" src="ui/icons/set.svg">
+        </button>
+    </div>
+    <div class="foot">
+        <div class="fcont">
+            <button id="muter" onclick=""><img class="butseen" id="buts" src="ui/icons/muted.svg"></button>
+            <input id="volumes" type="range" min="0" max="100" value="60">
+            <div class="volval">
+                <span id="vol"></span>
+            </div>
+            <div class="musdiv">
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/miscel.js"></script>
+    <script src="js/functionalities.js"></script>
+</body>
+</html>
